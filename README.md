@@ -158,11 +158,20 @@ MODEL_NAME = r"/path/to/base/model"  # Pre-trained model path
 MAX_SEQ_LENGTH = 5000        # Maximum sequence length
 DTYPE = torch.bfloat16       # Data type
 
+# ============ Fine-Tuning Strategy ============
+# Whether to use full fine-tuning or parameter-efficient fine-tuning (LoRA)
+# - True  : Full fine-tuning (recommended). All model parameters are updated.
+#           LoRA configuration below will be ignored.
+# - False : LoRA fine-tuning. Only LoRA adapter parameters are trained.
+full_finetuning = True
+
+
 # ============ LoRA Configuration ============
+# Used only when full_finetuning = False
 LORA_R = 512                 # LoRA rank
-LORA_ALPHA = 2048            # LoRA alpha parameter
+LORA_ALPHA = 2048            # LoRA scaling factor
 LORA_DROPOUT = 0             # LoRA dropout
-LORA_TARGET_MODULES = [      # Target modules
+LORA_TARGET_MODULES = [      # Target modules for LoRA adapters
     "q_proj", "k_proj", "v_proj", "o_proj",
     "gate_proj", "up_proj", "down_proj"
 ]
