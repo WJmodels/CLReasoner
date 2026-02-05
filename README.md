@@ -1,6 +1,7 @@
 # CLReasoner (Chain-of-Thought Learning for Chemical Reasoning)
 
-A training and evaluation framework for large language models on chemical tasks based on Chain-of-Thought reasoning
+**For paper:** *Mediating chemistry and large language models via a chemical language chain-of-thought strategy*
+
 
 ---
 
