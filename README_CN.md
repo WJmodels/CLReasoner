@@ -1,4 +1,4 @@
-# CLReasoner (Chain-of-Thought Learning for Chemical Reasoning)
+# CLReasoner
 
 **文章:** *Mediating chemistry and large language models via a chemical language chain-of-thought strategy*
 
