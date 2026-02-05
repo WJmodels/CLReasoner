@@ -35,3 +35,4 @@ dependencies:
       - sentencepiece==0.2.1
       - protobuf==6.33.0
       - hf-transfer==0.1.9
+      - wandb==0.17.9

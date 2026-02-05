@@ -1297,12 +1297,12 @@ def single_checkpoint_infer_pipeline(
 
 
 if __name__ == "__main__":
-    checkpoint_folder_path = r"/home/sunhnayu/lln/project/deepseek/CLReasoner/train/retrain_for_test/outputs/checkpoint-6200"
-    ground_truth_arrow_folder_path = r"/home/sunhnayu/lln/project/deepseek/data/xx_benchmark/test_set/xx_nmr_benchmark_train_subset_197983_depth1_197918_yws4090_subset1000_2508040949"
-    dataset_name = "test_set"
-    output_folder_path = r"/home/sunhnayu/lln/project/deepseek/CLReasoner/train/retrain_for_test/retrain_for_test"
-    result_name = "260204_nmr_structure_elucidation_result"
-    stat_metrics_scription_file_path = r"/home/sunhnayu/lln/project/deepseek/CLReasoner/test/stat_metrics_scription.py"
+    checkpoint_folder_path = r"/path/to/checkpoint"
+    ground_truth_arrow_folder_path = r"/path/to/test/arrow_dataset"
+    dataset_name = "test_dataset_name"
+    output_folder_path = r"/path/to/output/folder"
+    result_name = "260204_experiment_result_name"
+    stat_metrics_scription_file_path = r"/path/to/stat_metrics_scription.py"
     single_checkpoint_infer_pipeline(
         checkpoint_folder_path=checkpoint_folder_path,
         ground_truth_arrow_folder_path=ground_truth_arrow_folder_path,

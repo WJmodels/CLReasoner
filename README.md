@@ -154,7 +154,7 @@ max_grad_norm = 0.15         # Gradient clipping
 SAVE_STEPS = 8000            # Save checkpoint every N steps
 
 # ============ Model Configuration ============
-MODEL_NAME = r"/path/to/base/model"  # Pre-trained model path
+MODEL_NAME = r"/path/to/base/model"  # Pre-trained model path 
 MAX_SEQ_LENGTH = 5000        # Maximum sequence length
 DTYPE = torch.bfloat16       # Data type
 
@@ -164,7 +164,6 @@ DTYPE = torch.bfloat16       # Data type
 #           LoRA configuration below will be ignored.
 # - False : LoRA fine-tuning. Only LoRA adapter parameters are trained.
 full_finetuning = True
-
 
 # ============ LoRA Configuration ============
 # Used only when full_finetuning = False
@@ -177,9 +176,10 @@ LORA_TARGET_MODULES = [      # Target modules for LoRA adapters
 ]
 
 # ============ GPU Configuration ============
-GPU_IDS = [0]                # List of GPU IDs to use
+GPU_IDS = [0]                # GPU IDs to use
 ```
 
+- Our pre-trained model can be downloaded from https://www.modelscope.cn/models/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 #### Start Training
 ```bash
 # Activate environment

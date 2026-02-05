@@ -83,7 +83,7 @@ from pathlib import Path
 # ==============================================================================
 
 # Training data directory
-TRAIN_DATA_DIR = r"/home/sunhnayu/lln/project/deepseek/data/40w/depth1_forward_and_reverse_673598"
+TRAIN_DATA_DIR = r"/path/to/your/train/data"
 
 # Training epochs 
 NUM_EPOCHS = 20
@@ -95,7 +95,7 @@ MAX_SEQ_LENGTH = 5000
 DTYPE = torch.bfloat16 
 LOAD_IN_4BIT = False
 # Pretrained weights 
-MODEL_NAME = r"/home/sunhnayu/lln/project/deepseek/DeepSeek-R1-Distill-Qwen-1.5B"
+MODEL_NAME = r"/path/to/base/model"
 
 # Training parameters
 BATCH_SIZE = 64 
