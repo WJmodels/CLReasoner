@@ -42,7 +42,7 @@
 ### 5. NMR Structure Elucidation
 - **Input**: Molecular structure (SMILES format)
 - **Output**: ¹H-NMR, ¹³C-NMR
-- **Evaluation Metrics**: MAE, RMSD, Delta Count, Tanimoto similarity
+- **Evaluation Metrics**: MAE, RMSD, Delta Count
 
 ---
 
